@@ -19,7 +19,7 @@ var FriendsInChat = map[*openwechat.User]string{}
 // 记录可选的命令功能
 var Commands = map[string]Command{
 	"帮助": {
-		Header: "您好，我是群聊小助手!\n请回复以下关键词选择您需要的操作：\n",
+		Header: "您好，我是开源小助手!\n请回复以下关键词选择您需要的操作：\n",
 		Options: Group{
 			"加群": {
 				Desc: "我要加入社区项目交流群",
@@ -30,7 +30,7 @@ var Commands = map[string]Command{
 		},
 	},
 	"加群": {
-		Header:  "请回复以下群名称前的数字选择您需要加入的群聊：\n",
+		Header:  "请回复以下群名称前的数字选择您需要加入的群组：\n",
 		Options: Group{},
 		Handler: func(args ...interface{}) interface{} {
 			return InviteFriendToGroup(args[0].(*openwechat.Self), args[1].(*openwechat.Friend), args[2].(*openwechat.Group))

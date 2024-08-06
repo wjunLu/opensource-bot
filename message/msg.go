@@ -34,7 +34,7 @@ func HandleAllMessages(bot *openwechat.Bot, self *openwechat.Self) {
 	bot.MessageHandler = func(msg *openwechat.Message) {
 		reply := ""
 		if msg.IsFriendAdd() {
-			friend, err := msg.Agree("您好，我是昇腾小助手，请发送【帮助】查看支持的操作！")
+			friend, err := msg.Agree("您好，我是开源小助手，请发送【帮助】查看支持的操作！")
 			fmt.Println(friend, err)
 			return
 		}

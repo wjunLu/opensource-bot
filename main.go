@@ -4,8 +4,10 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/eatmoreapple/openwechat"
 	"github.com/wjunlu/ascend-bot/record"
 
+	"github.com/robfig/cron/v3"
 	"github.com/wjunlu/ascend-bot/login"
 	msg "github.com/wjunlu/ascend-bot/message"
 
@@ -30,6 +32,17 @@ func main() {
 	msg.HandleAllMessages(bot, self)
 	// 获取所有的好友
 	group.GetAllFriends(self)
+	// 启动定时任务
+	RunPeriodicTasks()
 	// 阻塞主goroutine, 直到发生异常或者用户主动退出
 	bot.Block()
+}
+
+func RunPeriodicTasks() {
+	c := cron.New()
+	c.AddFunc("@every 1h", func() {
+		// 定时清空每天的聊天缓存
+		group.FriendsInChat = map[*openwechat.User]string{}
+	})
+	c.Start()
 }

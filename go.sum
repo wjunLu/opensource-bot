@@ -1,5 +1,7 @@
 github.com/eatmoreapple/openwechat v1.4.7 h1:JyMr7I6ZdjWrVWKNs3onGz68YhkAnvTXTBMkS74O0nc=
 github.com/eatmoreapple/openwechat v1.4.7/go.mod h1:h4m2N8m0XsUKlm7UR8BUGkV89GNuKHCnlGV3J8n9Mpw=
+github.com/robfig/cron/v3 v3.0.1 h1:WdRxkvbJztn8LMz/QEvLN5sBU+xKpSqwwUO1Pjr4qDs=
+github.com/robfig/cron/v3 v3.0.1/go.mod h1:eQICP3HwyT7UooqI/z+Ov+PtYAWygg1TEWWzGIFLtro=
 github.com/samber/lo v1.46.0 h1:w8G+oaCPgz1PoCJztqymCFaKwXt+5cCXn51uPxExFfQ=
 github.com/samber/lo v1.46.0/go.mod h1:RmDH9Ct32Qy3gduHQuKJ3gW1fMHAnE/fAzQuf6He5cU=
 golang.org/x/text v0.16.0 h1:a94ExnEXNtEwYLGJSIUxnWoxoRz/ZcCsV63ROupILh4=
