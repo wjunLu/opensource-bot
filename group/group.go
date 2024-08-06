@@ -14,7 +14,7 @@ import (
 var AllFriends = openwechat.Friends{}
 
 // 保存每一位聊天对象上一次的有效command
-var FriendsInChat = map[*openwechat.User]string{}
+var FriendsInChat = make(map[string]string)
 
 // 记录可选的命令功能
 var Commands = map[string]Command{
