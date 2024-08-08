@@ -31,7 +31,7 @@ var Commands = map[string]Command{
 	},
 	"加群": {
 		Header:  "请回复以下群名称前的数字选择您需要加入的群组：\n",
-		Options: Group{},
+		Options: make(Group),
 		Handler: func(args ...interface{}) interface{} {
 			return InviteFriendToGroup(args[0].(*openwechat.Self), args[1].(*openwechat.Friend), args[2].(*openwechat.Group))
 		},
