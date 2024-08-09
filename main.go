@@ -4,13 +4,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/wjunlu/ascend-bot/record"
+	"github.com/wjunlu/opensource-bot/record"
 
 	"github.com/robfig/cron/v3"
-	"github.com/wjunlu/ascend-bot/login"
-	msg "github.com/wjunlu/ascend-bot/message"
+	"github.com/wjunlu/opensource-bot/login"
+	msg "github.com/wjunlu/opensource-bot/message"
 
-	group "github.com/wjunlu/ascend-bot/group"
+	group "github.com/wjunlu/opensource-bot/group"
 )
 
 func main() {

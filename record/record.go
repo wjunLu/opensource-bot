@@ -11,7 +11,7 @@ import (
 	"github.com/eatmoreapple/openwechat"
 )
 
-const ROOT_DOR = "/tmp/ascend-bot/record/groups/"
+const ROOT_DOR = "/tmp/opensource-bot/record/groups/"
 
 func RecordPictureMsg(msg *openwechat.Message) string {
 	if !msg.IsPicture() {

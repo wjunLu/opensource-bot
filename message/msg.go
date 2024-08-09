@@ -3,8 +3,8 @@ package msg
 import (
 	"fmt"
 
-	group "github.com/wjunlu/ascend-bot/group"
-	"github.com/wjunlu/ascend-bot/record"
+	group "github.com/wjunlu/opensource-bot/group"
+	"github.com/wjunlu/opensource-bot/record"
 
 	"github.com/eatmoreapple/openwechat"
 )

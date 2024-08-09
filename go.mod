@@ -1,4 +1,4 @@
-module github.com/wjunlu/ascend-bot
+module github.com/wjunlu/opensource-bot
 
 go 1.22.5
 
