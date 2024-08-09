@@ -38,8 +38,8 @@ func HandleAllMessages(bot *openwechat.Bot, self *openwechat.Self) {
 		if msg.IsFriendAdd() {
 			for i := 0; i < 10; i++ {
 				friend, err := msg.Agree()
-				log.Printf("IsFriendAdd friend: %s", friend)
-				log.Printf("IsFriendAdd friend err: %s", err)
+				log.Printf("IsFriendAdd friend: %+v", friend)
+				log.Printf("IsFriendAdd friend err: %+v", err)
 				if err == nil {
 					friend.SendText("您好，我是开源小助手，请发送【帮助】获取支持！")
 					msg.AsRead()
