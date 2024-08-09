@@ -34,15 +34,13 @@ func HandleAllMessages(bot *openwechat.Bot, self *openwechat.Self) {
 	bot.MessageHandler = func(msg *openwechat.Message) {
 		reply := ""
 		if msg.IsFriendAdd() {
-			for i := 0; i < 10; i++ {
-				friend, err := msg.Agree()
-				if err == nil {
-					friend.SendText("您好，我是开源小助手，请发送【帮助】获取支持！")
-					msg.AsRead()
-					break
-				}
-				fmt.Println(err)
+			friend, err := msg.Agree()
+			if err == nil {
+				friend.SendText("您好，我是开源小助手，请发送【帮助】获取支持！")
+				msg.AsRead()
+				return
 			}
+			fmt.Println(err)
 			return
 		}
 		if msg.IsComeFromGroup() {

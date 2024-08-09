@@ -29,6 +29,8 @@ func main() {
 	self := login.GetLoginUser(bot)
 	// 注册消息处理函数
 	msg.HandleAllMessages(bot, self)
+	// 获取所有好友
+	group.GetAllFriends(self)
 	// 启动定时任务
 	RunPeriodicTasks()
 	// 阻塞主goroutine, 直到发生异常或者用户主动退出

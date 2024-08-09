@@ -15,7 +15,7 @@
 ```
 
 #### 使用指南
-**运行小助手**
+**1. 运行小助手**
 - 方式1:
 ```
 # 直接运行源码
@@ -25,7 +25,7 @@ go run ./main.go
 - 方式2:
 ```
 # 构建源码生成可执行文件
-go build go build -o opensource-bot ./main.go
+go build -o opensource-bot ./main.go
 
 # 运行可执行文件
 ./opensource-bot
@@ -34,7 +34,7 @@ go build go build -o opensource-bot ./main.go
 
 需要注意，目前最长允许登录2天左右即自动退出登录，需要每天手动重新登录一次确保运营微信一直在线。
 
-**更新用户可加入的群组**
+**2. 更新用户可加入的群组**
 
 理论上，登录账号加入的所有群组都会展示给用户去加群，但是微信识别自己是否加入某个群一般有两个条件：
 
